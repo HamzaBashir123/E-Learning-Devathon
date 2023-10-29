@@ -2,8 +2,8 @@ import "./App.css";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Components/SignIn/SignIn";
-// import Profile from "./pages/profile/Profile.jsx";
-// import Register from "./pages/register/Register.jsx";
+import SignUP from "./Components/Signup/SignUP";
+import MainPage from "./Components/MainPage/MainPage";
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Dashboard />} />
        <Route path="/login" element={<Login />} />
-      {/* <Route path="/profile/:username" element={<Profile />} /> */}
-      {/* <Route path="/register" element={<Register />} />  */}
+      <Route path="/signUP" element={<SignUP />} />
+      <Route path="/mainPage" element={<MainPage />} /> 
     </Routes>
         
       </div>
